@@ -19,11 +19,33 @@ repositories {
 }
 
 dependencies {
+	// 기본 웹 관련 의존성
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// Lombok
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// JPA & Hibernate (MySQL과 연동)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'mysql:mysql-connector-java'
+
+	// OpenFeign (외부 API 호출)
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+
+	// Spring Boot Validation (DTO 검증)
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// 스케줄링 지원 (날씨 데이터 자동 저장)
+	implementation 'org.springframework.boot:spring-boot-starter'
+
+	// Swagger 문서화
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.6'
+
+	// 테스트 관련 의존성
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
