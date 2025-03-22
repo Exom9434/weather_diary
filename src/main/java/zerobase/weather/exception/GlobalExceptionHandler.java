@@ -1,4 +1,4 @@
-package zerobase.weather.exception;
+package main.java.zerobase.weather.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

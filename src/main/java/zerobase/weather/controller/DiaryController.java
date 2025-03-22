@@ -1,4 +1,4 @@
-package zerobase.weather.controller;
+package main.java.zerobase.weather.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

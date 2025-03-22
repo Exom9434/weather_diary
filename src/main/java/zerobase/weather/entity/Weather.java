@@ -1,4 +1,4 @@
-package zerobase.weather.entity;
+package main.java.zerobase.weather.entity;
 
 import lombok.*;
 
